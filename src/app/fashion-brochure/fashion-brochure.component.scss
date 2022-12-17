@@ -1,0 +1,67 @@
+.fashionContainer{
+    margin: 40px;
+    .section-top-image-slider {
+        .topImageSlider {
+            overflow: hidden;
+            z-index: 1;
+            img {
+                position: relative;
+                width: 100%;
+                height: 50vh;
+                // object-fit: cover;
+                // object-position: center;
+                overflow: hidden;
+                z-index: -1;
+            }
+        }
+    }
+    // .owlDta {
+    //     z-index: 1;
+    //     button {
+    //         background: #01534d;
+    //         width: 45px !important;
+    //         height: 45px;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         border-radius: 50px;
+    //     }
+    //     img {
+    //         width: 10px;
+    //     }
+    //     button.owl-left {
+    //         position: absolute;
+    //         left: -20px;
+    //     }
+    //     button.owl-right {
+    //         position: absolute;
+    //         right: -23px;
+    //     }
+    // }
+    .mostViewed{ 
+        
+    .imageContainer{
+        max-width: 350px;
+            .flex-sb {
+                display: flex;
+                justify-content: space-between;
+            }
+            ::ng-deep{
+            .owl-theme .owl-nav [class*=owl-] {
+                color: #FFF;
+                font-size: 14px;
+                margin: 5px;
+                padding: 4px 7px;
+                background: #D6D6D6;
+                display: inline-block;
+                cursor: pointer;
+                border-radius: 3px;
+                /* right: 197px; */
+                position: absolute;
+            }
+        }
+    }
+    
+}
+}
+

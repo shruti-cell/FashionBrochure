@@ -1,0 +1,15 @@
+<div class="fashionContainer">
+  <section class="section-top-image-slider">
+      
+          <div class="topImageSlider">
+              <owl-carousel-o [options]="headerImageSlider">
+  
+                  <ng-container *ngFor="let slide of images">
+                      <ng-template carouselSlide>
+                          <img [src]="slide">
+                      </ng-template>
+                  </ng-container>
+              </owl-carousel-o>
+            </div>
+  </section>
+  </div>

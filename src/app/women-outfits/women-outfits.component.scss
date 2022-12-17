@@ -1,0 +1,79 @@
+.womenContainer{
+
+background-color: bisque;
+margin: 40px;
+// * {
+//     box-sizing: border-box;
+//   }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 32%;
+    padding: 10px;
+    height: 300px; 
+    margin:8px/* Should be removed. Only for demonstration */
+    
+  }
+
+  .image{
+    object-fit: cover;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+}
+
+.fashionContainer{
+  margin: 40px;
+  .section-top-image-slider {
+      .topImageSlider {
+          overflow: hidden;
+          z-index: 1;
+          img {
+              position: relative;
+              width: 100%;
+              height: 78vh;
+              object-fit: contain;
+              //object-position: center;
+              overflow: hidden;
+              z-index: -1;
+          }
+      }
+  }
+  // .owlDta {
+  //     z-index: 1;
+  //     button {
+  //         background: #01534d;
+  //         width: 45px !important;
+  //         height: 45px;
+  //         display: flex;
+  //         justify-content: center;
+  //         align-items: center;
+  //         border-radius: 50px;
+  //     }
+  //     img {
+  //         width: 10px;
+  //     }
+  //     button.owl-left {
+  //         position: absolute;
+  //         left: -20px;
+  //     }
+  //     button.owl-right {
+  //         position: absolute;
+  //         right: -23px;
+  //     }
+  // }
+  
+}

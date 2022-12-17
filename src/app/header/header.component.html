@@ -1,0 +1,102 @@
+<!-- <p>
+    <mat-toolbar>
+     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+     <mat-icon>share</mat-icon>
+   </button>
+  </mat-toolbar>
+  </p> -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../../../assets/icons/logo.png" width="80" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-4 me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" routerLink="/women">Women</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/men" >Men</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/kids" >Kids</a>
+                </li>
+                
+            </ul>
+            <div class="d-flex flex-vc">
+                <!-- <a class="nav-link signIn" routerLink="/account/login">Sign In</a> -->
+                <!-- <button class="btn btn_green organizingButton">Start Organizing</button> -->
+                <div  class="admin-layout">
+                    <div class="d-flex overlayContainers">
+                        <div class="profile-header">
+                            <div class="side-icons">
+                                <div class="d-flex">
+                                    <!-- <div class="profile-imgContainer">
+                                        <img src="../../../assets/icons/bell-icon-black.png" class="img-fluid" alt="">
+                                    </div> -->
+                                    <div class="profile-imgContainer" (click)="toggleFunction()">
+                                        <!-- <img src="../../../assets/icons/profile-icon.png" class="img-fluid" alt=""> -->
+                                        <mat-icon>menu</mat-icon>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- today editing starts here 3/11/22  -->
+                            <div class="menuContainer" id="containerMenu">
+                                <div class="secondItem ">
+                                    <div class="innerItems">
+                                        <div class="subMenus flex-vc flex-s">
+                                            <div class="imgSetting">
+                                                <div class="imgBackground ">
+                                                    <!-- <img src="../../../assets/icons/money_bag.png" alt=""> -->
+                                                </div>
+                                            </div>
+                                            <div class="userText">
+                                                <p>Settings</p>
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="thirdItem ">
+                                    <div class="innerItems">
+                                        <div class="subMenus flex-vc flex-s">
+                                            <div class="imgBackground thirdImg">
+                                                <!-- <img src="../../../assets/icons/logout_outline.png" alt=""> -->
+                                            </div>
+                                            <div class="userText">
+                                                <p> Logout </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                </div>
+                            </div>
+                            <!-- editing ends here 3/11/22  -->
+                        </div>
+                        
+                       
+                       
+                        
+                    </div>
+                
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+<router-outlet></router-outlet>
